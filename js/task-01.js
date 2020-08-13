@@ -13,14 +13,11 @@ const user = {
 };
 
 user.mood = "happy";
-console.log(user);
-
 user.hobby = "skydiving";
 user.premium = false;
-console.log(user);
 
 const kyes = Object.keys(user);
 
 for (const key of kyes) {
-  console.log("Value: ", user[key]);
+  console.log(`key: ${key}, value: ${user[key]}`);
 }

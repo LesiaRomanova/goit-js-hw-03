@@ -2,12 +2,12 @@
 
 function findBestEmployee(employees) {
   let max = 0;
-  let bestEmployee = null;
+  let bestEmployee;
   for (const employee in employees) {
-    const numOfTask = employees[employee];
+    // const numOfTask = employees[employee];
 
-    if (numOfTask > max) {
-      max = numOfTask;
+    if (employees[employee] > max) {
+      max = employees[employee];
       bestEmployee = employee;
     }
     return bestEmployee;
